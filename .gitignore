@@ -1,4 +1,5 @@
 # Dependencies
+venv/
 datasets/
 node_modules/
 npm-debug.log*
