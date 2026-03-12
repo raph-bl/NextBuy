@@ -8,11 +8,6 @@ departments    = pd.read_csv('./datasets/departments.csv')
 products       = pd.read_csv('./datasets/products.csv')
 orders         = pd.read_csv('./datasets/orders.csv')
 order_products = pd.read_csv('./datasets/order_products.csv')
-# dashboard base
-main_page = st.Page("nextbuy_dashboard.py", title="main page")
-page_2    = st.Page("dashboard_page2.py", title="product reorder prediction")
-pg        = st.navigation([main_page, page_2])
-
 # code 
 st.title("Welcome to NextBuy!")
 st.subheader('Most popular product')
@@ -25,5 +20,5 @@ top = top_merged.sort_values('count', ascending=True).tail(10)
 st.bar_chart(
     data=top.set_index('product_name')['count'],
     horizontal=True,
-    color="#6a0dad"
+    color="#6a0dad" 
 )

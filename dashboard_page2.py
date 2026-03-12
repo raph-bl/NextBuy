@@ -8,4 +8,4 @@ orders         = pd.read_csv('./datasets/orders.csv')
 order_products = pd.read_csv('./datasets/order_products.csv')
 
 st.markdown("# page 2")
-st.sidebar.markdown("# Page 2")
+
